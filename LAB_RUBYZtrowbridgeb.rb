@@ -1,6 +1,6 @@
 #Bradley Trowbridge
 #COP 3834C-01 Web Application Development
-#Ruby1
+#LAB RubyZ
 
 class Computer
 
@@ -15,12 +15,12 @@ class Computer
 
 	def turnOn
 		@on = true
-		puts "The computer is on"
+		puts "The computer turns on"
 	end
 
 	def turnOff
 		@on = false
-		puts "The computer is off"
+		puts "The computer turns off"
 	end
 
 	def getOnline
@@ -33,6 +33,7 @@ class Computer
 	end
 
 	def useBrowser
+		puts "Attempting to use the browser"
 		if @online
 			puts "You use the browser"
 		else
@@ -52,8 +53,9 @@ class Computer
 	end
 end
 
-myComputer = Computer.new "Acer Aspire", 2.5, false, false
+myComputer = Computer.new "Acer Aspire", 2.5, true, false
 myComputer.print
+myComputer.turnOff
 myComputer.useBrowser
 myComputer.turnOn
 myComputer.useBrowser
