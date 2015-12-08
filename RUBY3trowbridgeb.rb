@@ -1,6 +1,6 @@
 #Bradley Trowbridge
 #COP 3834C-01 Web Application Development
-#LAB RubyZ
+#Ruby3
 
 class Computer
 
@@ -17,7 +17,7 @@ class Computer
 		@on = true
 		puts "The computer turns on"
 	end
-
+g
 	def turnOff
 		@on = false
 		puts "The computer turns off"
